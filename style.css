@@ -10,48 +10,23 @@ body {
     width: 20%;
     float: left;
     align-items: center;
-    margin: 10px;
-}
-.cabecera_1 a {
-    color: black;
-    margin: 15px;
-    text-decoration: none;
+    margin: 0px 100px;
+    display: flex;
 }
 .logo img {
     width: 50px;
     height: 50px;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 0px 10px;
 }
-.icons {
-    float: right;
-    align-items: center;
-    width: 1032px;
-    height: 50px;
-    margin: 10px;
+.logo h1 {
+    position: inherit;
+
 }
-.icons a {
-    float: right;
+.cabecera_1 a {
+    color: black;
+    margin: 15px;
+    text-decoration: none;
 }
-.input_1 {
-    background-color: rgb(204, 204, 204);
-    text-align: center;
-    width: 500px;
-    height: 40px;
-    position: relative;
-    border-width: initial;
-    border-style: initial;
-    border-color: transparent;
-    border-image: initial;
-    border-radius: 10px;
-    margin: 5px;
-    transition: 0.5s ease-in;
-}
-.input_1:focus, .input_1:hover {
-    outline: none;
-    border-color: rgb(88, 88, 88);
-    background-color: #fff;
-    box-shadow: 0 0 0 5px rgba(206, 211, 252, 0.3);
-  }
 .cabecera_1 {
     backdrop-filter: blur(10px);
     width: 100%;
@@ -74,6 +49,37 @@ body {
 }
 .cabecera_2 .marca {
     margin: 15px;
+}
+.icons {
+    float: right;
+    align-items: center;
+    width: 30%;
+    height: 50px;
+    margin: 10px 100px;
+    font-size: 20px;
+}
+.icons a {
+    float: right;
+}
+.input_1 {
+    background-color: rgb(204, 204, 204);
+    text-align: center;
+    width: 500px;
+    height: 40px;
+    position: relative;
+    border-width: initial;
+    border-style: initial;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 10px;
+    margin: 15px;
+    transition: 0.5s ease-in;
+}
+.input_1:focus, .input_1:hover {
+    outline: none;
+    border-color: rgb(88, 88, 88);
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgba(206, 211, 252, 0.3);
 }
 .marca div {
     text-align: center;
@@ -100,12 +106,7 @@ body {
 .tittle {
     color: black;
     font-size: 2.5rem;
-    margin: 0;
-}
-.description {
-    color: black;
-    margin: 0 0 50px;
-    font-size: 1.2rem;
+    margin: 150px 0px;
 }
 @keyframes slider {
     0% {background-image: url(imagenes/m2.jpg);}
@@ -116,58 +117,76 @@ body {
 }
 .clases {
     width: 100%;
-    height: 200px;
-    margin: 35px 0px;
+    height: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 .cont-card {
-    gap: 10px;
-    margin: 28px;
-    display: flex;
-    justify-content: center;
-}
-.card {
-    width: 100%;
-    height: 150px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border: 1px solid rgba(128, 128, 128, 0.4);
-}
-.card img {
-    border-radius: 10px;
     width: 100%;
     height: 100%;
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.18);
+    gap: 15px;
+    margin: 0px 28px;
+    display: flex;
+    justify-content: center;
 }
-.card:hover img {
-    transform: scale(1.1);
-    transition: 0.2s ease-in-out;
-    filter: grayscale(1) brightness(0.4);
+.cont-card div {
+    width: 100%;
 }
 .card1 {
+    background-image: url(imagenes/mansion.jpg);
+    background-position: center;
+    background-size: cover;
     width: 100%;
-    height: 150px;
+    height: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.card2 {
+    background-image: url(imagenes/coche.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
     border: 1px solid rgba(128, 128, 128, 0.4);
-}
-.card1 img {
     border-radius: 10px;
-    align-items: center;
-    width: 100%;
-    height: 170px;
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.18);
 }
-.card1:hover img {
+.card3 {
+    background-image: url(imagenes/yate.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.card4 {
+    background-image: url(imagenes/avion.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.card:hover{
     transform: scale(1.1);
     transition: 0.2s ease-in-out;
     filter: grayscale(1) brightness(0.4);
 }
 .cuerpo {
-    align-items: center;
-    height: 1750px;
+    height: 100%;
     width: 100%;
+    align-items: center;
     color: white;
 }
 .cuerpo button {
@@ -185,44 +204,446 @@ body {
     color: white;
     transition: 0.2s ease-in-out;
 }
-.capa {
-    width: 100%;
-    height: 750px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.capa img {
-    width: 100%;
-    height: 250px;
-}
 .cuerpo h1 {
     font-size: 25px;
-    margin: 20px;
+    margin: 25px 80px;
     color: black;
 }
-.capa p {
-    text-decoration: none;
-    color: black;
-    text-align: center;
+.capa {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.c1 {
+    background-image: url(imagenes/cm1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.c2 {
+    background-image: url(imagenes/cm2.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.c3 {
+    background-image: url(imagenes/cm3.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.c4 {
+    background-image: url(imagenes/cm4.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.a1 {
+    background-image: url(imagenes/cc1.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.a2 {
+    background-image: url(imagenes/cc2.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.a3 {
+    background-image: url(imagenes/cc3.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.a4 {
+    background-image: url(imagenes/cc4.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.b1 {
+    background-image: url(imagenes/cy1.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.b2 {
+    background-image: url(imagenes/cy2.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.b3 {
+    background-image: url(imagenes/cyy3.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.b4 {
+    background-image: url(imagenes/cy4.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.d1 {
+    background-image: url(imagenes/ca1.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.d2 {
+    background-image: url(imagenes/ca2.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.d3 {
+    background-image: url(imagenes/ca3.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+.d4 {
+    background-image: url(imagenes/ca4.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
 }
 .capa div {
-    margin: 0px 120px;
-    width: 65%;
-    height: 300px;
+    margin: 25px 0px;
     border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
 }
-.capa div:hover img {
-    transition: 0.3s ease-in-out;
-    width: 100%;
-    height: 100%;
-    border-radius: 
-    10% 50% 10% 50% /
-    50% 10% 50% 10%;
+.capa div a {
+    text-decoration: none;
+    color: black;
+}
+.capa div p {
+    margin: 10px 0px;
+    text-align: center;
 }
 .capa div:hover {
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
-    border-radius: 
-    10% 50% 10% 50% /
-    50% 10% 50% 10%;
 }
+.marcas_provee {
+    width: 100%;
+    height: 100%;
+}
+.primero {
+    margin: 50px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.segundo {
+    margin: 50px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.l1 {
+    background-image: url(imagenes/cessna.svg);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.l2 {
+    background-image: url(imagenes/gulfstream-1-logo.png);
+    background-position: center;
+    background-size: cover;
+    width: 160px;
+    height: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.l3 {
+    background-image: url(imagenes/porsche.png);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.l4 {
+    background-image: url(imagenes/bugatti-1.svg);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.l5 {
+    background-image: url(imagenes/riva.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.l6 {
+    background-image: url(imagenes/sea-ray-1.svg);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.l7 {
+    background-image: url(imagenes/rolex.svg);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.l8 {
+    background-image: url(imagenes/omega.png);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.l9 {
+    background-image: url(imagenes/tifa.png);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.l10 {
+    background-image: url(imagenes/pandora-brandlogo.net_.png);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.caja_iniciar {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 50px 0px;
+}
+.sesion {
+    background: rgba(146, 146, 146, 0.473);
+    width: 450px;
+    height: 450px;
+    padding: 24px;
+    border-radius: 16px;
+    border: solid 5px rgb(255, 255, 255. 0.1);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo {
+    margin: 16px;
+}
+.input-box {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+.input_box input {
+    width: 100%;
+    padding: 10px 16px 10px 38px;
+    margin: 25px 0px;
+    border-radius: 99px;
+    border: solid 3px transparent;
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    caret-color: white;
+    font-weight: 500;
+    transition: 0.25s;
+}
+.input-box input:hover, input:focus {
+    outline: none;
+    border-color: rgb(88, 88, 88);
+    background-color: #e4e4e4;
+    box-shadow: 0 0 0 5px rgba(206, 211, 252, 0.3);
+}
+.input-box input::placeholder {
+    color: rgb(255, 255, 255, 0.75);
+}
+.input-box input::-ms-reveal {
+    filter: invert(100%);
+}
+.input-box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+    color: rgb(255, 255, 255, 0.75);
+    font-size: 18px;
+    transition: 0.25s;
+}
+.input-box input:focus + i {
+    color: white;
+}
+.remember-forgot-box {
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+.remember-forgot-box h5 {
+    font-weight: normal;
+}
+.remember-me {
+    display: flex;
+    gap: 8px;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.login-button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 10px 0;
+    background: #000000;
+    border: none;
+    border-radius: 99px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    outline: transparent 3px solid;
+    transition: 0.1s;
+}
+.login-button:focus, .login-button:hover {
+    background: #ffffff;
+    color: black;
+    transition: 0.3s ease-in-out;
+    outline: #000000 1px solid;
+}
+.dont-have-an-account {
+    font-weight: normal;
+    margin-top: 12px;
+}
+.pie {
+    border: 1px solid;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #000000;
+}
+.izquierdo {
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+}
+.logo_izquierdo {
+    margin: 0px 25px;
+    width: 100px;
+    height: 100px;
+    background-image: url(imagenes/logo_2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.izquierdo a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.izquierdo p {
+    margin: 0px 25px;
+}
+.derecho {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+.w1 {
+    background-image: url(imagenes/instagram.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    margin: 5px 25px;
+}
+.w2 {
+    background-image: url(imagenes/tiktok.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    margin: 5px 25px;
+}
+.w3 {
+    background-image: url(imagenes/x.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    margin: 5px 25px;
+} 
